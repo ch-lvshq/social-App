@@ -1,0 +1,26 @@
+/* .PostingPl-key{
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-between;
+} */
+.PostingPl-top{
+    margin-left: 14px;
+    background-color:rgba(240,240,240,0.5);
+}
+.PostingPl-key{
+    cursor: pointer;
+}
+#PostingPl-top-hf{
+    background-color: black;
+    height: auto;
+    width:auto;
+        top: 40% ;
+    left:40% ;
+    position: fixed;
+}
+.PostingPl-hfvalue{
+    margin-left: 2em;
+    max-width: 90%;
+    list-style: none;
+    background-color: rgba(155,155,155,0.9);
+}

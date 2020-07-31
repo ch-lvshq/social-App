@@ -1,0 +1,56 @@
+*{
+    margin: 0;padding: 0;
+}
+.App-header{
+    display: flex;
+    flex-flow: column ;
+    height: 100vh;
+}
+.App-node{
+    color: red;
+    cursor: pointer;
+}
+.App-node:hover{
+    color: blue;
+}
+.App-top{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.App-main{
+    display: flexbox;
+    background-color: #eee;
+    flex-grow: 1;
+    
+}
+.App-ul{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #ddd;
+}
+.App-li{
+   
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    letter-spacing: 7px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    list-style: none;
+}
+.App-nav{ 
+    padding: 10px;
+    font-family: 微软雅黑，宋体;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+   text-decoration: none;
+   color: #000;
+}
+.App-nav:hover{
+      color: red;
+ 
+}

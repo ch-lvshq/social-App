@@ -1,0 +1,67 @@
+
+.Myspace{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+.Myspace-header{
+    height: 200px;
+    padding-left: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/b756bd1e5d36cc02bdd1b088c2daa2cd_1.jpg);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    line-height: 2em;
+}
+.Myspace-son1{
+    margin-top: 10px;
+}
+.Myspace-son2{
+    font-size:22px;
+    font-family: 黑体;
+    color:white ;
+}
+.Myspace-son3{
+    color:white ;
+    font-size:14px
+}
+.Myspace-nav{
+    padding: 10px;
+    font-family: 微软雅黑，宋体;
+    cursor: pointer;
+   text-decoration: none;
+}
+.Myspace-mainson{
+    background-color: rgb(4, 240, 240);
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row;
+}
+.Myspace-main{flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.Myspace-mainsontwo{
+    flex-grow: 1;
+     background-color: #ddd;
+}
+.Myposting{
+    
+    height: 100%;
+}
+#edit{
+    position: absolute;
+    
+    top: 200px;
+    left: 200px;
+   
+}
+.edit{
+    height: 200px;
+    width: 200px;
+    background-color: #aaa;
+}

@@ -1,0 +1,24 @@
+.news-top{
+    margin-left: 20%;
+    min-height: 60vh;
+    max-width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: white;
+    line-height: 1.5em;
+}
+.news-top-one:hover{
+    background-color: rgba(0,0,200,0.3);
+}
+.news-contorl{
+    line-height: 2em;
+    text-indent: 2em;
+}
+.news-contorl:hover{
+    cursor: pointer;
+    color: red;
+}
+.news-contorl.active {
+    background-color: black;
+    color: white;
+}

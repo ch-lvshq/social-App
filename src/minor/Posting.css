@@ -1,0 +1,32 @@
+.Posting-top{
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 2em;
+}
+.Posting-value{
+    line-height: 1.5em;
+    max-height: 400px;
+    overflow: auto;
+   
+}
+.Posting-post{
+    padding-left: 14px;
+    background-color: white;
+    margin-bottom: 2em;
+    border: 1px black solid;
+}
+.Posting-nav{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.Posting-nav-a{
+    cursor: pointer;
+}
+.Posting-nav-a:hover{
+   color: red;
+}
+.Posting-nav-a:active{
+   color: blue;
+}

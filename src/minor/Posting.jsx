@@ -6,7 +6,6 @@ import {postinga} from '../redux/actions'
 import PostingPl from './Posting/PostingPl'
 import {store }from '../redux/stores'
 class Posting extends Component{
-
     nava=(e)=>{
         let b=e.target.parentNode.parentNode.getAttribute('name')
        ReactDOM.render(
@@ -42,7 +41,7 @@ class Posting extends Component{
                        <div>{value.time}</div>
                        <div className='Posting-value'>{value.posting}</div>
                        <nav className='Posting-nav'>
-                           <span className='Posting-nav-a' onClick={this.nava} >评论({this.props.posting[item].plvalue.length})</span>
+                           <span className='Posting-nav-a' onClick={this.nava}>评论({this.props.posting[item].plvalue.length})</span>
                            <span className='Posting-nav-a' onClick={this.navb} >点赞({this.props.posting[item].dz.length})</span>
                            <span className='Posting-nav-a' onClick={this.navc}>收藏({this.props.posting[item].sc.length})</span>
                        </nav>

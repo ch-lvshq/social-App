@@ -30,13 +30,14 @@ import {postinga}from '../../redux/actions'
           mydz:b
       })
       let c=this.props.posting.slice(0)
-      for (let i = 0; i < c.length; i++) {
-        for (let j = 0; j < c[i].dz.length; j++) {
-        if(c[i].dz[j]===this.props.name){
-            c[i].dz.splice(j,1)
-        }
-        }
-    }
+      let d=[]//用于储存点赞的帖子的位置
+      c.forEach((value,item)=>{
+            if(value.dz.includes(this.props.name)){
+                 d.push(item)
+            }
+       })
+       let f=c[d[a]].dz.indexOf(this.props.name)//确定点赞人位置
+       c[d[a]].dz.splice(f,1)
     this.props.postinga(c)
      }
     render(){

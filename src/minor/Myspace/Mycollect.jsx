@@ -30,13 +30,14 @@ import {postinga}from '../../redux/actions'
             mysc:b
         })
         let c=this.props.posting.slice(0)
-        for (let i = 0; i < c.length; i++) {
-          for (let j = 0; j < c[i].sc.length; j++) {
-          if(c[i].sc[j]===this.props.name){
-              c[i].sc.splice(j,1)
-          }
-          }
-      }
+        let d=[]//用于储存收藏的帖子的位置
+        c.forEach((value,item)=>{
+              if(value.sc.includes(this.props.name)){
+                   d.push(item)
+              }
+         })
+         let f=c[d[a]].sc.indexOf(this.props.name)//确定收藏人位置
+         c[d[a]].sc.splice(f,1)
       this.props.postinga(c)
        }
     render(){

@@ -15,7 +15,7 @@ import {postinga} from '../redux/actions'
 
  class App extends Component{
     componentDidMount(){
-        fetch('http://localhost:3000/post.json')
+        fetch('./post.json')
 .then(res=>res.json()).then(date=>this.props.postinga(date.post)
     ).catch(error=>console.log(error))
     }

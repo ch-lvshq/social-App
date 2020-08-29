@@ -22,9 +22,11 @@ class Myposting extends Component{
         let a=e.target.parentNode.parentNode.getAttribute('name')
         let b=this.state.mypost.slice(0)
         let c=b.splice(a,1)
-        let d= this.props.posting.indexOf(c)
+        let d= this.props.name
         let f=this.props.posting.slice(0)
-        f.splice(d,1)
+        f.forEach((value,item)=>{
+            if(value.name===d&&value.time===c[0].time){f.splice(item,1)}
+        })
         this.setState({
             mypost:b
         })
